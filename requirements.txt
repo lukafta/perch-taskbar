@@ -1,0 +1,8 @@
+# Qt for Python, core modules only (QtCore / QtGui / QtWidgets / QtTest ...).
+# The full "PySide6" meta-package adds ~150 MB of add-ons (WebEngine, 3D,
+# Multimedia) this app never uses.
+# 6.10 is the first release with Python 3.14 wheels.
+PySide6-Essentials>=6.10,<7
+
+# COM access, used to write taskbar shortcuts that carry their own app ID.
+pywin32>=311; sys_platform == "win32"
